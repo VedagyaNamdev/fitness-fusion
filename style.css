@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: rgb(37, 36, 36);
+}
+.nav{
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* position: sticky;
+    top: 0px; */
+
+
+    /* background-color: rgb(0, 0, 0) ; */
+    /* margin-bottom: 10px; */
+    /* border-bottom: 2px solid white; */
+}
+
+
+.logo{
+    margin: 20px;
+    font-family: Brush Script MT;
+    font-size: 40px;
+}
+
+.nav-2{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 100%;   
+}
+
+.set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;     
+    /* text-align: center; */
+}
+
+
+.burger{
+    display: none;
+}
+
+.nav-2.show-nav {
+    display: flex;
+}
+  
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+
+.heading{
+    color: rgb(253, 247, 242);
+    text-align: center;
+    /* background-color: rgba(147, 173, 154, 0.4); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+
+header{
+    background-image: url("assets/pic1.4.jpg");
+    height: 100rem;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.select p{
+    margin: 20px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    
+}
+
+
+/* body{
+    background-image: url("assets/pic1.4.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+} */
+
+
+
+.cat{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: rgba(76, 82, 74, 0.7);
+    height: 360px;
+    width:450px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255,0.8);
+    /* align-items: center; */
+    /* padding-top: 35px; */
+}
+
+
+.content:hover{
+    transform: scale(0.95);
+    border-radius:10px;
+}
+
+
+.categories{
+    font-size: large;
+    font-weight:bold;
+}
+
+.categories p{
+    text-align: center;
+    margin: 5px;
+}
+
+
+.content {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    height: 92%;
+    width: 450px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    text-decoration-line: none;
+    color: black;
+    line-height: 1.5rem;
+}
+
+
+.footer{
+ 
+    /* height: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid white;
+    padding-top: 50px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
+.fa-brands{
+    font-size: 30px; 
+    margin: 20px;    
+}
+
+
+
+
+
+
+
+@media (min-width: 788px) {
+    header {
+        height: 800px;
+    }
+}
+@media (max-width: 788px) {
+    header {
+        height: 500px;
+    }
+    
+
+    .burger{
+        display: contents;
+        width: 100%;       
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 15px;
+
+    }
+            #checkbox {
+                display: none;
+            }
+            
+            .toggle {
+                position: relative;
+                width: 30px;
+                height: 40px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                transition-duration: .5s;
+            }
+            
+            .bars {
+                width: 100%;
+                height: 3px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 4px;
+            }
+            
+            #bar2 {
+                transition-duration: .8s;
+            }
+            
+            #bar1,#bar3 {
+                width: 75%;
+            }
+            
+            #checkbox:checked + .toggle .bars {
+                position: absolute;
+                transition-duration: .5s;
+            }
+            
+            #checkbox:checked + .toggle #bar2 {
+                transform: scaleX(0);
+                transition-duration: .5s;
+            }
+            
+            #checkbox:checked + .toggle #bar1 {
+                width: 80%;
+                transform: rotate(45deg);
+                transition-duration: .8s;
+            }
+            
+            #checkbox:checked + .toggle #bar3 {
+                width: 80%;
+                transform: rotate(-45deg);
+                transition-duration: .8;
+            }
+            
+            /* #checkbox:checked + .toggle {
+                transition-duration: .5s;
+                transform: rotate(180deg);
+            } */
+    
+
+    .box{
+        height: 250px;
+        width:320px;
+        /* padding-top: 20px; */
+
+    }
+
+    .content {
+        height: 90%;
+        width: 320px;
+    }
+
+    .categories p{
+        margin: 1px;
+    }
+
+    .nav-2{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 12%; /* Position the nav-2 below the hamburger icon */
+        right: 15px; /* Align to the right */
+        background-color: #333;
+        padding: 20px;
+        gap: 20px;
+        z-index: 100; /* Ensure it appears above other content */
+        width: 6rem;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgb(255, 255, 255,0.8);
+    }
+    
+    .nav-2.show-nav {
+        display: flex;
+    }
+
+}
+
+
+
+@media (max-width: 630px) {
+    header {
+        height: 450px; /* Adjust height for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+/* __________________________________________________________________________________________________________ */
+/* About page */
+

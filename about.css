@@ -1,0 +1,29 @@
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size:40px;
+    
+
+}
+
+.logo p{
+    font-family: Brush Script MT;
+    font-size: 40px;
+
+}
+b{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    max-width: 100ch;
+    margin: auto;
+    padding: 0 40px;
+    background-image: linear-gradient( rgb(37, 36, 36), rgb(78, 102, 35));
+
+}

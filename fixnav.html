@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 60px; /* Adjust according to your navbar height */
+    /* Your content styles */
+    background-color: blanchedalmond;
+    height: 1000px;
+}
+
+    </style>
+    <div class="navbar" id="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem rerum obcaecati autem quam ex aliquam voluptatibus quos exercitationem fuga nihil, labore dolore totam est nam dignissimos delectus at soluta nesciunt.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- <script>
+        window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+    </script> -->
+</body>
+</html>
